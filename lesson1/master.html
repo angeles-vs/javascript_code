@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <title>GAME</title>
+</head>
+
+<body>
+    <section class="playground opciones">
+        <div class="dashboard">
+            <p class="dashboard__score">YOU: <span id="user"></span></p>
+            <p class="dashboard__score">PC: <span id="pc"></span></p>
+        </div>
+        <h2 class="playground__title">READY TO PLAY?</h2>
+        <div class="playground__container">
+            <p>Choose your option</p>
+            <div class="playground__container__items">
+                <input type="button" class="button playbutton" value="rock" id="rock" data-opcion="rock">
+                <input type="button" class="button playbutton" value="paper" id="paper" data-opcion="paper">
+                <input type="button" class="button playbutton" value="scissors" id="scissors"
+                    data-opcion="scissors"><br>
+            </div>
+        </div>
+    </section>
+    <section class="resultados playground" style="display: none;">
+
+        <h2 class="playground__title">RESULTS</h2>
+        <span class="texto_mensaje_resultado"></span><br>
+        <input type="button" class="button resetbutton" value="reset" id="reset" data-opcion="reset">
+    </section>
+    <script src="./ppt.js"></script>
+</body>
+<footer class="footer">
+    By Angeles viña
+</footer>
+
+</html>
